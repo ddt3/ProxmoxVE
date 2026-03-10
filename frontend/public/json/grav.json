@@ -1,0 +1,40 @@
+{
+  "name": "Grav",
+  "slug": "grav",
+  "categories": [
+    21
+  ],
+  "date_created": "2026-03-09",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 80,
+  "documentation": "https://getgrav.org/documentation/",
+  "website": "https://getgrav.org/",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/grav.webp",
+  "config_path": "/var/www/html/grav/user/config/system.yaml",
+  "description": "Grav is a modern open-source flat-file CMS. It is fast, simple, and flexible, making it easy to create and manage your website.\n\nOn a slightly more technical level, Grav is a flat-file content management system, which means it doesn't use a database. Instead, it uses files and folders to store content, making it lightweight and easy to deploy.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/grav.sh",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 5,
+        "os": "debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Set an admin user and password immediately after installation!",
+      "type": "warning"
+    }
+  ]
+}
